@@ -22,3 +22,4 @@ module.exports = createCoreController('api::restaurant.restaurant', ({ strapi })
     return { data, meta };
   },
 }));
+// test befor commit
