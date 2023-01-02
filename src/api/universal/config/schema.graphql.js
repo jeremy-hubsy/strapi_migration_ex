@@ -1,4 +1,5 @@
-const { sanitizeEntity } = require('strapi-utils');
+const { sanitizeEntity } = require('@strapi/utils');
+
 module.exports = {
   query: `
     universalBySlug(id: ID slug: String): Universal

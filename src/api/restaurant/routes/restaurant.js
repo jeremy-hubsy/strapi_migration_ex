@@ -4,6 +4,12 @@
  * restaurant router
  */
 
-const { createCoreRouter } = require('@strapi/strapi').factories;
-
-module.exports = createCoreRouter('api::restaurant.restaurant');
+module.exports = {
+  routes: [
+    {
+      method: 'GET',
+      path: '/restaurants/with-meta-date',
+      handler: 'restaurant.findCustomRoute',
+    },
+  ],
+};
